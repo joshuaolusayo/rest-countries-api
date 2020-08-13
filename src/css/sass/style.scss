@@ -1,0 +1,123 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+
+    --mode-bg: hsl(207, 26%, 17%);
+    --bg: hsl(209, 23%, 22%);
+    --text-color: hsl(0, 0%, 100%);
+}
+
+html[data-theme="light"] {
+    --mode-bg: hsl(0, 0%, 98%);
+    --bg: hsl(0, 0%, 100%);
+    --text-color: hs0,l(200, 15%, 8%);
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+    transition: all 400ms !important;
+    transition-delay: 0 !important;
+}
+
+body {
+    color: var(--text-color);
+}
+
+.mode-bg {
+    background: var(--mode-bg);
+}
+
+.bg {
+    background: var(--bg);
+}
+
+.bg-trans {
+    background-color: var(--bg-trans);
+}
+
+.text-heading {
+    color: var(--text-heading);
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.search {
+    input:focus {
+        background-color: var(--bg);
+        color: var(--text-color);
+    }
+
+    ::-webkit-input-placeholder {
+        color: var(--text-color);
+    }
+
+    :-ms-input-placeholder {
+        color: var(--text-color);
+    }
+    
+    ::placeholder {
+        color: var(--text-color);
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+    }
+
+    .filter {
+        .bootstrap-select  {
+            .dropdown-toggle:focus {
+                outline: none;
+            }
+
+            .dropdown-menu {
+                background-color: var(--bg);
+                color: var(--text-color);
+            }
+
+            .dropdown-item {
+                color: var(--text-color);
+            }
+
+            .dropdown-menu:focus, .dropdown-item:focus, .dropdown-item:hover {
+                background-color: var(--text-color);
+                color: var(--bg);
+            }
+
+            .dropdown-item.active, .dropdown-item:active {
+                background-color: var(--text-heading);
+                color: var(--bg);
+            }
+
+            .btn {
+                border: none;
+                outline: none;
+            }
+
+            .btn-light {
+                color: var(--text-heading);
+                background: var(--bg);
+                border-color: var(--bg) !important;
+            }
+        }
+    }
+}
+
+// COUNTRIES CARD
+
+.displayCountries {
+    .card {
+        width: 233px;
+
+        &-img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

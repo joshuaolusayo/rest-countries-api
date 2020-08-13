@@ -1,0 +1,43 @@
+html { font-family: Arial, Helvetica, sans-serif; --mode-bg: hsl(207, 26%, 17%); --bg: hsl(209, 23%, 22%); --text-color: hsl(0, 0%, 100%); }
+
+html[data-theme="light"] { --mode-bg: hsl(0, 0%, 98%); --bg: hsl(0, 0%, 100%); --text-color: hs0,l(200, 15%, 8%); }
+
+html.transition, html.transition *, html.transition *:before, html.transition *:after { transition: all 400ms !important; transition-delay: 0 !important; }
+
+body { color: var(--text-color); }
+
+.mode-bg { background: var(--mode-bg); }
+
+.bg { background: var(--bg); }
+
+.bg-trans { background-color: var(--bg-trans); }
+
+.text-heading { color: var(--text-heading); }
+
+.text-color { color: var(--text-color); }
+
+.search input:focus { background-color: var(--bg); color: var(--text-color); }
+
+.search ::placeholder { color: var(--text-color); }
+
+.search .form-control:focus { box-shadow: none; }
+
+.search .filter .bootstrap-select .dropdown-toggle:focus { outline: none; }
+
+.search .filter .bootstrap-select .dropdown-menu { background-color: var(--bg); color: var(--text-color); }
+
+.search .filter .bootstrap-select .dropdown-item { color: var(--text-color); }
+
+.search .filter .bootstrap-select .dropdown-menu:focus, .search .filter .bootstrap-select .dropdown-item:focus, .search .filter .bootstrap-select .dropdown-item:hover { background-color: var(--text-color); color: var(--bg); }
+
+.search .filter .bootstrap-select .dropdown-item.active, .search .filter .bootstrap-select .dropdown-item:active { background-color: var(--text-heading); color: var(--bg); }
+
+.search .filter .bootstrap-select .btn { border: none; outline: none; }
+
+.search .filter .bootstrap-select .btn-light { color: var(--text-heading); background: var(--bg); border-color: var(--bg) !important; }
+
+.displayCountries .card { width: 233px; }
+
+.displayCountries .card-img { height: 150px; object-fit: cover; }
+
+.displayCountries .card p { font-size: 14px; }
